@@ -1,0 +1,16 @@
+-var list = ['1', '2', '3']
+html
+	head
+		title MyApp
+	body(class=["MyClass"])
+		h1 My App
+		p
+			h3 Novo app
+			ul
+				each val in list
+					li= val
+
+			h3 server list
+			ul
+				each val in server_list
+					li= val
