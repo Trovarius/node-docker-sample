@@ -11,7 +11,7 @@ const bookRouter = express.Router();
 
 app.use(express.static('public'));
 app.set('views', './src/views');
-app.set('views engine', 'jade');
+app.set('view engine', 'jade');
 
 bookRouter.route('/')
 		.get(function(req, res){
